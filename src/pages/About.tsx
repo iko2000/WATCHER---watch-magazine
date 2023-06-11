@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import img1 from "../assets/about/img1.webp";
 import img2 from "../assets/about/img2.jpg";
 import {  Aboutcontainer,

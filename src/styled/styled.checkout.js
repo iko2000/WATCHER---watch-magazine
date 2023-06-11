@@ -76,14 +76,18 @@ input {
 `;
 
 export const Checkoutmainbox = styled.div`
-  width: "50%";
-  height: "500px";
-  display: "flex";
-  align-items: "flex-start";
-  background-color: "wheat";
-  flex-direction: "column";
-  padding: "15px";
-  gap: "15px";
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  background-color: wheat;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  @media (max-width: 1044px) {
+
+    width: 90%;
+}
 `
 
 export const CheckoutAdress = styled.div`

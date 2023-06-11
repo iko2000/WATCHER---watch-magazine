@@ -1,10 +1,9 @@
 import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-import styled from "styled-components";
+import { useState } from "react";
+
 import Blog from "../components/Blog.js";
 import { useContext } from "react";
 import { Themecontext } from "../App.js";
-import { objcontext } from "../App.js";
 import tick from "../assets/icons/tick.jpg";
 import {
   Itemcontainer,
@@ -20,33 +19,27 @@ import {
   Itempicturescont,
   Itemdescriptiveimage,
   Itemdescriptioncont,
+  Icons,
+  P
 } from "../styled/styled.item.js";
-import { Icons } from "/users/administrator/desktop/react/watchmagazine/src/components/navigation.js";
 
-export default function Item(props: any) {
+
+export default function Item() {
   const location = useLocation();
   const addIt: any = useContext(Themecontext);
-  const removestate: any = useContext(objcontext);
 
   const id = location.state?.id;
   const [quantity, setQuantity] = useState(1);
-  const [price, setPrice] = useState(0);
-  const [name, setName] = useState("");
-  const P = styled.p`
-  font-size: {(props) => props.size }
-`;
-  console.log(location.state);
+
+ 
+
 
   function handleClick() {
     addIt(id, quantity);
   }
 
-  useEffect(() => {
-    setPrice(location.state.price);
-    setName(location.state.name);
-  }, [quantity]);
 
-  console.log(location.state.features[1].ironmade);
+
   return (
     <>
       <Itemcontainer>
@@ -56,8 +49,8 @@ export default function Item(props: any) {
           </Itemimgbox>
           <Itemcontentbox>
             <Itemdescription>
-              <P size="1.5em">{location.state.name}</P>
-              <P size="1.5em">{location.state.category}</P>
+              <P style={{color: "red", fontSize: "1.5em"}} size="2.0em">{location.state.name}</P>
+              <P  style={{color: "grey", fontSize: "1.2em"}} size="1.5em">{location.state.category}</P>
               <P size="1.5em">{location.state.description}</P>
               <P size="1.5em">$ {location.state.price} </P>
               <P size="1.5em">(In Stock): {location.state.quantity} </P>

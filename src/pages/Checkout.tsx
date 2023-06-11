@@ -5,7 +5,7 @@ import Cart from "../components/Cart.js";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
+
 import {
   CheckoutContainer,
   CheckoutContainerBox,
@@ -461,8 +461,16 @@ export default function Checkout() {
                 <button
                   onClick={handleSubmit((d) => setSenddata(d))}
                   type="submit"
-                  style={{ width: "100%", borderRadius: "15px" }}
-                  className="btnyellow"
+                  style={{
+                    width: "100%",
+                    fontSize: "25px",
+                    borderRadius: "15px",
+                    height: "50px",
+                    border: "none",
+                    backgroundColor: "blue",
+                    color: "white",
+                    cursor: "pointer",
+                  }}
                 >
                   CONTINUE & PAY
                 </button>

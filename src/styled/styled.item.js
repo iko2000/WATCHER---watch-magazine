@@ -86,6 +86,7 @@ export const Btn = styled.button`
   border-radius: 5px;
   background-color: rgb(216, 125, 74);
   color: black;
+  cursor: pointer;
 `;
 
 export const Addbtn = styled.button`
@@ -98,6 +99,7 @@ export const Addbtn = styled.button`
   border-radius: 20px;
   background-color: rgb(216, 125, 74);
   color: white;
+  cursor: pointer;
 `;
 
 export const ItemFeatures = styled.div`
@@ -112,7 +114,7 @@ export const ItemFeatures = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     flex-direction: column-reverse;
-    height: 60rem;
+    height: 65rem;
   }
 `;
 
@@ -145,8 +147,8 @@ export const Itemdescriptiveimage = styled.img`
   @media (max-width: 768px) {
     height: 100%;
     &:hover {
-    scale: 1.1;
-  }
+      scale: 1.1;
+    }
   }
 `;
 export const Itemdescriptioncont = styled.div`
@@ -164,5 +166,15 @@ export const Itemdescriptioncont = styled.div`
   @media (max-width: 768px) {
     width: 95%;
     height: 30%;
+    margin-top: 25px;
+  
   }
+`;
+export const P = styled.p`
+font-size: {(props) => props.size }
+`;
+
+export const Icons = styled.img`
+  width: 20px;
+  height: 20px;
 `;

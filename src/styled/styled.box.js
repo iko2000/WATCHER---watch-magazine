@@ -12,6 +12,7 @@ export const Container = styled.div`
   padding: 10px;
   align-items: center;
   margin: 8px;
+  border: 1px solid black;
 `;
 export const Imgbox = styled.div`
   width: 90%;
@@ -41,11 +42,22 @@ export const Pdecorated = styled.p`
 `;
 export const Btn = styled.button`
   width: 50%;
-  height: 8%;
+  height: 25px;
   border: none;
   border-radius: 10px;
   background-color: rgb(216, 125, 74);
   color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  font-family: regular;
+
+  &:hover {
+    color: blue;
+    scale: 1.1;
+  }
 `;
 export const Img = styled.img`
   width: 80%;
@@ -61,6 +73,7 @@ export const Category = styled.div`
   height: 1em;
   font-weight: bold;
   transition: 2s;
+  font-family: regular;
 
   &:hover {
     opacity: 1;

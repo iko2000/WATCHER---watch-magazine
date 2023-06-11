@@ -1,10 +1,10 @@
 
-import { Img1 } from "../App.js";
+
 import { Container,  Imgbox, Textbox, P, Pdecorated, Btn, Category, Img} from "../styled/styled.box.js";
 
 
 export default function Box(props: any) {
-  const id = props.id;
+
   return (
     <>
       <Container>

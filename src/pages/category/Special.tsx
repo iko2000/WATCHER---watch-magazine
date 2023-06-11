@@ -1,10 +1,9 @@
 import Box from "/Users/Administrator/Desktop/React/watchmagazine/src/components/Box.js";
-import styled from "styled-components";
 import data from "/Users/Administrator/Desktop/React/watchmagazine/src/data.json";
 import { useNavigate } from "react-router-dom";
 import { Container, Wrapper } from "../../styled/styled.categories.js";
 
-export default function Special(props) {
+export default function Special(props:any) {
   const navigate = useNavigate();
   console.log(data);
   const recievedinput = props.inp;

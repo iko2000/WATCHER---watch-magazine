@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import GlobalStyle from "./styled/globalStyles.js";
 import { Route, useNavigate } from "react-router-dom";
 import { Routes } from "react-router-dom";
@@ -20,9 +19,9 @@ import Special from "./pages/category/Special.js";
 import Cart from "./components/Cart.js";
 import Checkout from "./pages/Checkout.js";
 import cartpicture from "./assets/icons/cart.png";
-import searchpicture from "./assets/icons/search.png"
+import searchpicture from "./assets/icons/search.png";
 import GlobalStylefont from "./styled/globalStyles.js";
-import ad from "./assets/social-media/ad.jpg"
+import ad from "./assets/social-media/ad.jpg";
 import {
   Generalcontainer,
   Generalbox,
@@ -41,28 +40,21 @@ import {
   Span,
   Cartbox,
   Inp,
-  Logo
+  Logo,
+  Img1,
+  Adimage,
 } from "./styled/styledApp.js";
 
-const Img1 = styled.img`
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-`;
-
-const Adimage = styled.img`
-  width:100%;
-  height: 200px;
-`
 export const objcontext = createContext<any>(" ");
 export const Themecontext = createContext("");
 function App() {
   const navigate = useNavigate();
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   const [cart, setCart] = useState(false);
   const [bill, setBill] = useState<any>(0);
   const [inptvalue, setInpvalue] = useState("");
   const [numberofItems, setNumberofItems] = useState<any>(0);
+  const [activestate, setActivestate] = useState<string>("home");
 
   const defaultCart = () => {
     let cart: any = {};
@@ -75,8 +67,6 @@ function App() {
 
   const addItem: any = (itemId: any, quantity: any) => {
     setObj((obj: any) => ({ ...obj, [itemId]: quantity }));
-
-
   };
 
   useEffect(() => {
@@ -96,14 +86,19 @@ function App() {
     );
     setNumberofItems(total);
   }, [obj, data]);
-
+  const linkStyles = {
+    fontSize: activestate === "home" ? "18px" : "15px",
+  };
+  const linkStyles2 = {
+    fontSize: activestate === "about" ? "18px" : "15px",
+  };
   return (
     <>
       <objcontext.Provider value={{ obj, bill }}>
         <Themecontext.Provider value={addItem}>
           <Generalcontainer>
             <GlobalStyle />
-            <GlobalStylefont/>
+            <GlobalStylefont />
             <Generalbox>
               <Nav isVisible={active}>
                 <Navigation />
@@ -111,14 +106,29 @@ function App() {
               <Main>
                 <Header>
                   <Headerbox>
-                    <Logo><Link onClick={() => setActive(true)} to="/">
-                      WATCHER
-                    </Link>
+                    <Logo>
+                      <Link onClick={() => setActive(true)} to="/">
+                        WATCHER
+                      </Link>
                     </Logo>
-                    <Link onClick={() => setActive(true)} to="/">
+                    <Link
+                      style={linkStyles}
+                      onClick={() => {
+                        setActivestate("home");
+                       
+                      }}
+                      to="/"
+                    >
                       HOME
                     </Link>
-                    <Link onClick={() => setActive(false)} to="/aboutus">
+                    <Link
+                      style={linkStyles2}
+                      onClick={() => {
+                        setActivestate("about");
+                        
+                      }}
+                      to="/aboutus"
+                    >
                       ABOUT US
                     </Link>
                     <Img1 onClick={() => setCart(!cart)} src={cartpicture} />
@@ -156,10 +166,22 @@ function App() {
                           ) : null}
                           {numberofItems ? (
                             <button
-                              style={{ width: "100%", borderRadius: "10px" }}
+                              style={{
+                                width: "90%",
+                                borderRadius: "10px",
+                                padding: "10px",
+                                border: "none",
+                                cursor: "pointer",
+                                color: "blue",
+                                fontSize: "18px",
+
+                                backgroundColor: "burlywood",
+                              }}
                               onClick={() => {
                                 setActive(false);
                                 navigate("/checkout");
+                                setActivestate("");
+                                setCart(false);
                               }}
                             >
                               CHECK OUT
@@ -175,15 +197,20 @@ function App() {
                     {" "}
                     <Inp
                       placeholder="Search for item..."
-                      onChange={(e) => {
+                      onChange={(e: any) => {
                         setInpvalue(e.target.value);
                       }}
                       value={inptvalue}
-                    /> 
-                     <Img1 src={searchpicture}/>
+                    />
+                    <Img1 src={searchpicture} />
                   </Search>
                 </Header>
-                <Mainbox onClick={() => setInpvalue('')}>
+                <Mainbox
+                  onClick={() => {
+                    setActivestate("");
+                    setInpvalue("");
+                  }}
+                >
                   <Routes>
                     <Route path="/" element={<Homepage inp={inptvalue} />} />
                     <Route path="/aboutus" element={<About />} />
@@ -209,13 +236,15 @@ function App() {
                 </Mainbox>
               </Main>
 
-              <Aside isVisible={active}><Adimage src={ad} alt="advertisment"/> </Aside>
+              <Aside isVisible={active}>
+                <Adimage src={ad} alt="advertisment" />{" "}
+              </Aside>
             </Generalbox>
           </Generalcontainer>
           <Footer>
             <Foot>
               <Footdiv>
-                <Footdiv2>WATCHHUNTER</Footdiv2>{" "}
+                <Footdiv2 style={{color: "grey"}}>WATCHHUNTER</Footdiv2>{" "}
                 <Footdiv3>
                   "Watchhunter is brand with full of possibilites and bright
                   future". <Span>Copyright 2021. All Rights Reserved</Span>{" "}
@@ -225,7 +254,7 @@ function App() {
                 <Footdiv2>
                   {" "}
                   <Link to="/">HOME</Link>
-                  <Link to="/aboutus">ABOUT US</Link>
+                  <Link to="/aboutus">ABOUTUS</Link>
                 </Footdiv2>
                 <Footdiv2>
                   {" "}

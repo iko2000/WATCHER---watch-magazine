@@ -15,6 +15,9 @@ export const Generalbox = styled.div`
   justify-content: center;
 
   background-color: white;
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
 `;
 export const Main = styled.main`
   width: 70%;
@@ -119,11 +122,17 @@ export const Foot = styled.div`
 export const Footdiv = styled.div`
   width: 50%;
   height: 100%;
+  color: wheat;
+
+  a {
+    color: wheat;
+  }
 `;
 
 export const Footdiv2 = styled.div`
   width: 100%;
   height: 50%;
+  color: wheat;
 
   display: flex;
   justify-content: center;
@@ -139,6 +148,9 @@ export const Footdiv3 = styled.div`
   align-items: center;
   gap: 15px;
   flex-direction: column;
+  @media (max-width: 776px) {
+    padding: 18px;
+  }
 `;
 export const Span = styled.span`
   font-size: 1.1em;
@@ -147,10 +159,11 @@ export const Cartbox = styled.div`
   width: 150px;
   height: 300px;
 
-  background-color: wheat;
+  background-color: white;
   position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   gap: 15px;
   right: 30%;
@@ -163,8 +176,19 @@ export const Inp = styled.input`
   width: 90%;
   height: 80%;
   border: none;
-  
+
   &:acitve {
-    border:none;
+    border: none;
   }
+`;
+
+export const Img1 = styled.img`
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+`;
+
+export const Adimage = styled.img`
+  width: 100%;
+  height: 200px;
 `;
