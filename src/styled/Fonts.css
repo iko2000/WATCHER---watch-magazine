@@ -1,0 +1,20 @@
+@font-face {
+    font-family: regular;
+    src: url("../assets/fonts/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: numero;
+    src: url("../assets/fonts/Numero\ 10\ Clean.ttf");
+}
+
+@font-face {
+    font-family: nightwatch;
+    src: url("../assets/fonts/TheNightWatch.ttf");
+}
+@font-face {
+    font-family: logo;
+    src: url("../assets/fonts/GeraldinePersonalUseItalic-PK12m.ttf");
+}
+
+
