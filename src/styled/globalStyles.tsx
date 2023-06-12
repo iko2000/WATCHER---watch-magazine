@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 10px;
     background-color: #1F2937;
     color: black;
+    @media (max-width: 1044px) {
+    background-color: white;
+}
   }
   p {
     margin: 0;

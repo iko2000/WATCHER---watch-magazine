@@ -1,5 +1,5 @@
 [ 
-  {"id": 1, "name": "MakkeleUltra", "category": "Mechanic", "price": 255, "brand": "Rolex", "quantity": 11, "description": 
+  {"id": 1, "name": "MakkeleUltra", "category": "Mechanic Classic", "price": 255, "brand": "Rolex", "quantity": 11, "description": 
     "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
    "image": "/assets/assets/clockpics/5.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
     "waterproof": true }, {"ironmade": false}, {"guarantie": true}]},
@@ -11,27 +11,27 @@
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/3.webp", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": false }, {"ironmade": true}, {"guarantie": true}]},
-  { "id": 4, "name": "Cassio pro", "category": "Mechanic", "price": 99, "brand": "Rolex", "quantity": 2, "description": 
+  { "id": 4, "name": "Cassio pro", "category": "Electronic", "price": 99, "brand": "Rolex", "quantity": 2, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/4.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": false}, {"guarantie": true}]},
-  { "id": 5, "name": "Leodoro M5", "category": "Mechanic", "price": 995, "brand": "Rolex", "quantity": 15, "description": 
+  { "id": 5, "name": "Leodoro M5", "category": "Mechanic Classic", "price": 995, "brand": "Rolex", "quantity": 15, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/5.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": true}, {"guarantie": true}]},
-  { "id": 6, "name": "Leodoro M3", "category": "Mechanic", "price": 32, "brand": "Cassio", "quantity": 15, "description": 
+  { "id": 6, "name": "Leodoro M3", "category": "Mechanic Classic", "price": 32, "brand": "Cassio", "quantity": 15, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/6.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": true}, {"guarantie": false}]} ,
-  { "id": 7, "name": "Peronni2", "category": "Mechanic", "price": 55, "brand": "Berreti", "quantity": 15, "description": 
+  { "id": 7, "name": "Peronni2", "category": "Electronic", "price": 55, "brand": "Berreti", "quantity": 5, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/7.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": true}, {"guarantie": false}]} ,
-  { "id": 8, "name": "Messi", "category": "Mechanic", "price": 200, "brand": "Kalloni", "quantity": 15, "description": 
+  { "id": 8, "name": "Messi", "category": "Electronic Special", "price": 200, "brand": "Kalloni", "quantity": 125, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/8.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": true}, {"guarantie": true}]} , 
-  { "id": 9, "name": "Barbare", "category": "Mechanic", "price": 199, "brand": "Tittari", "quantity": 15, "description": 
+  { "id": 9, "name": "Barbare", "category": "Classic Special", "price": 10000, "brand": "Tittari", "quantity": 1, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/9.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": false}, {"guarantie": true}]}, 
@@ -43,15 +43,15 @@
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/11.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": false }, {"ironmade": true}, {"guarantie": true}]} , 
-  { "id": 12, "name": "Pollo PRO", "category": "Mechanic", "price": 1145, "brand": "Seven", "quantity": 15, "description": 
+  { "id": 12, "name": "Pollo PRO", "category": "Mechanic", "price": 1145, "brand": "Seven", "quantity": 154, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/12.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": false}, {"guarantie": true}]}, 
-  { "id": 13, "name": "Elitte", "category": "Mechanic", "price": 500, "brand": "Rolex", "quantity": 15, "description": 
+  { "id": 13, "name": "Elitte", "category": "Mechanic", "price": 500, "brand": "Rolex", "quantity": 5, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/13.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/assets/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": false}, {"guarantie": true}]}, 
-  { "id": 14, "name": "Bomba Saati", "category": "Mechanic", "price": 425, "brand": "Seven", "quantity": 15, "description": 
+  { "id": 14, "name": "Bomba Saati", "category": "Mechanic", "price": 425, "brand": "Seven", "quantity": 13, "description": 
   "Watch for real Men. Bussines class with all of it benefits and amazing design, speacially made for businessmen",
  "image": "/assets/assets/clockpics/14.jpg", "picture1": "/assets/assets/clockpics/6.jpg", "picture2": "/assets/assets/clockpics/14.jpg", "picture3":"/assets/assets/clockpics/9.jpg" , "picture4": "/src/assets/clockpics/3.webp", "features": [ {
   "waterproof": true }, {"ironmade": true}, {"guarantie": true}]}

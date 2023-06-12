@@ -1,6 +1,28 @@
 import styled from "styled-components";
 import "./Fonts.css";
 
+export const Navbarusual = styled.div`
+  width: 90%;
+  height: 25rem;
+  display: flex;
+  background-color: wheat;
+  justify-content: center;
+  margin-top: 25px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  @media (max-width: 768px) {
+   display: none;
+  }
+`;
 export const Navbar = styled.div`
   width: 80%;
   height: 25rem;
@@ -38,10 +60,12 @@ export const Navbar = styled.div`
 export const Icons = styled.img`
   width: 20px;
   height: 20px;
+
 `;
 export const Bur = styled.img`
   width: 20px;
   height: 20px;
+  margin-top: 10px;
 
   display: none;
 

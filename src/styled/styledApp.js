@@ -39,7 +39,7 @@ export const Nav = styled.nav`
   font-family: regular;
 
   @media (max-width: 768px) {
-    width 10%;
+    width 20px;
     height: 5rem
     display: ${({ isVisible }) => (isVisible ? "block" : "none")};
     flex-direction: column;

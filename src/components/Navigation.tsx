@@ -6,11 +6,11 @@ import icon3 from "../assets/icons/mechanic.png";
 import icon4 from "../assets/icons/special.png";
 import category from "../assets/icons/category.png";
 import { useState } from "react";
-import { Navbar, Icons, Bur } from "../styled/styled.navigation.js";
+import { Navbar, Icons, Bur, Navbarusual } from "../styled/styled.navigation.js";
 
 
 export default function Navigation() {
-  const [burger, setBurger] = useState(true);
+  const [burger, setBurger] = useState(false);
   return (
     <>
       <Bur src={category} onClick={() => setBurger(!burger)} />
@@ -32,6 +32,20 @@ export default function Navigation() {
       ) : (
         <></>
       )}
+        <Navbarusual>
+          <Link to="/classic">
+            Classic <Icons src={icon1} />
+          </Link>
+          <Link to="/mechanic">
+            Mechanic <Icons src={icon3} />{" "}
+          </Link>
+          <Link to="/electronic">
+            Electric <Icons src={icon2} />
+          </Link>
+          <Link to="/special">
+            Special Ones <Icons src={icon4} />
+          </Link>
+        </Navbarusual>
     </>
   );
 }

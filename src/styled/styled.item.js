@@ -40,7 +40,7 @@ export const Itemcontentbox = styled.div`
 
   background-color: wheat;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
     height: 25rem;
   }
 `;
@@ -63,7 +63,7 @@ export const Itemdescription = styled.div`
   font-family: regular;
 
   @media (max-width: 768px) {
-    width: 95%;
+    width: 90%;
     height: 90%;
   }
 `;
@@ -115,6 +115,7 @@ export const ItemFeatures = styled.div`
     width: 100%;
     flex-direction: column-reverse;
     height: 65rem;
+    align-items: flex-start;
   }
 `;
 
@@ -128,7 +129,7 @@ export const Itempicturescont = styled.div`
   gap: 10px;
   border-radius: 15px;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -164,10 +165,10 @@ export const Itemdescriptioncont = styled.div`
   font-family: regular;
   font-weight: bold;
   @media (max-width: 768px) {
-    width: 95%;
+    width: 90%;
     height: 30%;
+
     margin-top: 25px;
-  
   }
 `;
 export const P = styled.p`

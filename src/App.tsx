@@ -49,7 +49,7 @@ export const objcontext = createContext<any>(" ");
 export const Themecontext = createContext("");
 function App() {
   const navigate = useNavigate();
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const [cart, setCart] = useState(false);
   const [bill, setBill] = useState<any>(0);
   const [inptvalue, setInpvalue] = useState("");
@@ -115,6 +115,7 @@ function App() {
                       style={linkStyles}
                       onClick={() => {
                         setActivestate("home");
+                        setActive(true)
                        
                       }}
                       to="/"
@@ -125,7 +126,7 @@ function App() {
                       style={linkStyles2}
                       onClick={() => {
                         setActivestate("about");
-                        
+                        setActive(false)
                       }}
                       to="/aboutus"
                     >

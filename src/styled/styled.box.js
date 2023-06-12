@@ -12,7 +12,6 @@ export const Container = styled.div`
   padding: 10px;
   align-items: center;
   margin: 8px;
-  border: 1px solid black;
 `;
 export const Imgbox = styled.div`
   width: 90%;
